@@ -1,22 +1,6 @@
 $(document).ready(function(){
 	"use strict";
     
-        /*==================================
-* Author        : "ThemeSine"
-* Template Name : CarVilla HTML Template
-* Version       : 1.0
-==================================== */
-
-
-
-
-/*=========== TABLE OF CONTENTS ===========
-1. Scroll To Top
-2. welcome animation support
-3. owl carousel
-======================================*/
-
-    // 1. Scroll To Top 
 		$(window).on('scroll',function () {
 			if ($(this).scrollTop() > 300) {
 				$('.return-to-top').fadeIn();
@@ -31,7 +15,6 @@ $(document).ready(function(){
 			return false;
 		});
 
-	// 2. welcome animation support
 
         $(window).load(function(){
         	$(".welcome-hero-txt h2,.welcome-hero-txt p").removeClass("animated fadeInUp").css({'opacity':'0'});
@@ -44,9 +27,6 @@ $(document).ready(function(){
         });
 
 	
-	// 3. owl carousel
-
-		// i.  new-cars-carousel
 		
 			$("#new-cars-carousel").owlCarousel({
 				items: 1,
@@ -59,12 +39,9 @@ $(document).ready(function(){
 				transitionStyle:"fade",
 				animateIn: 'fadeIn',
 				animateOut: 'fadeOutLeft'
-				// navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
+				
 			});
 
-
-		// ii. .testimonial-carousel
-	
 		
 			var owl=$('.testimonial-carousel');
 			owl.owlCarousel({
@@ -74,9 +51,7 @@ $(document).ready(function(){
 				loop:true,
 				autoplay:true,
 				smartSpeed:1000,
-				
-				//nav:false,
-				//navText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+			
 				
 				dots:false,
 				autoplayHoverPause:false,
@@ -96,8 +71,6 @@ $(document).ready(function(){
 				
 				
 			});
-
-		// iii. .brand-item (carousel)
 		
 			$('.brand-item').owlCarousel({
 				items:6,
